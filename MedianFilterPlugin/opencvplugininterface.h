@@ -12,8 +12,8 @@ public:
     virtual void processImage(const cv::Mat &inputImage, cv::Mat &outputImage) = 0;
 };
 
-#define OPENCVCVPLUGININTERFACE_IID "com.mostefa.opencvplugininterface"
-Q_DECLARE_INTERFACE(OpenCVPluginInterface, OpenCVPluginInterfaceIID)
+#define OPENCVPLUGININTERFACE_IID "com.mostefa.opencvplugininterface"
+Q_DECLARE_INTERFACE(OpenCVPluginInterface, OPENCVPLUGININTERFACE_IID)
 
 
 #endif // OPENCVPLUGININTERFACE_H
