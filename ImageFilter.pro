@@ -28,7 +28,10 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    opencvplugininterface.h
 
 FORMS += \
         mainwindow.ui
+
+include(opencv.pri)
