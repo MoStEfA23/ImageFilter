@@ -7,8 +7,9 @@
 
 class OpenCVPluginInterface{
 public:
-    virtual ~OpenCVPluginInterface();
-    virtual QString description() = 0;
+    OpenCVPluginInterface();
+    ~OpenCVPluginInterface();
+    QString description();
     virtual void processImage(const cv::Mat &inputImage, cv::Mat &outputImage) = 0;
 };
 

@@ -9,6 +9,8 @@ QT       -= gui
 TARGET = MedianFilterPlugin
 TEMPLATE = lib
 
+CONFIG += plugin
+
 DEFINES += MEDIANFILTERPLUGIN_LIBRARY
 
 # The following define makes your compiler emit warnings if you use
@@ -27,9 +29,12 @@ SOURCES += \
 
 HEADERS += \
         medianfilterplugin.h \
-        medianfilterplugin_global.h 
+        medianfilterplugin_global.h \ 
+    opencvplugininterface.h
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+
+include(../opencv.pri)

@@ -1,15 +1,15 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-07-22T09:56:54
+# Project created by QtCreator 2018-07-22T11:36:59
 #
 #-------------------------------------------------
 
-QT       -= gui
+QT       += widgets gui
 
-TARGET = MedianBlurPlugin
+TARGET = hmi
 TEMPLATE = lib
 
-DEFINES += MEDIANBLURPLUGIN_LIBRARY
+DEFINES += HMI_LIBRARY
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -23,13 +23,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        medianblurplugin.cpp
+    mainwindow.cpp
 
 HEADERS += \
-        medianblurplugin.h \
-        medianblurplugin_global.h 
+        hmi_global.h \  
+    mainwindow.h
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
+
+FORMS += \
+    mainwindow.ui \
+    mainwindow.ui
