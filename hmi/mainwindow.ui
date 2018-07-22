@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>539</width>
+    <width>663</width>
     <height>347</height>
    </rect>
   </property>
@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="mInputImageLineEdit"/>
+    </item>
     <item row="0" column="3">
      <widget class="QPushButton" name="mBrowseImagePushButton">
       <property name="text">
@@ -22,20 +25,10 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QListWidget" name="mFiltersListWidgets"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QPushButton" name="mHelpPushButton">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="3">
+    <item row="1" column="3">
      <widget class="QPushButton" name="mFilterPushButton">
       <property name="text">
-       <string>PushButton</string>
+       <string>Filtrer</string>
       </property>
      </widget>
     </item>
@@ -46,9 +39,6 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1" colspan="2">
-     <widget class="QLineEdit" name="mInputImageLineEdit"/>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -56,7 +46,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>539</width>
+     <width>663</width>
      <height>22</height>
     </rect>
    </property>

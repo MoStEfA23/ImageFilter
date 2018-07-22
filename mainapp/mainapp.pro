@@ -14,3 +14,8 @@ else:unix: LIBS += -L$$OUT_PWD/../hmi/ -lhmi
 
 INCLUDEPATH += $$PWD/../hmi
 DEPENDPATH += $$PWD/../hmi
+
+INCLUDEPATH += $$PWD/../MedianFilterPlugin
+LIBS += -L$$OUT_PWD/../MedianFilterPlugin -lMedianFilterPlugin
+include(../opencv.pri)
+

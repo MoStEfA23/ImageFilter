@@ -4,7 +4,6 @@
 #
 #-------------------------------------------------
 
-QT       -= gui
 
 TARGET = MedianFilterPlugin
 TEMPLATE = lib
@@ -29,12 +28,12 @@ SOURCES += \
 
 HEADERS += \
         medianfilterplugin.h \
-        medianfilterplugin_global.h \ 
-    opencvplugininterface.h
+        medianfilterplugin_global.h  
+
+include(../opencv.pri)
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
 
-include(../opencv.pri)

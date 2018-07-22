@@ -3,7 +3,7 @@
 # Project created by QtCreator 2018-07-22T11:36:59
 #
 #-------------------------------------------------
-
+include(../opencv.pri)
 QT       += widgets gui
 
 TARGET = hmi
@@ -27,13 +27,17 @@ SOURCES += \
 
 HEADERS += \
         hmi_global.h \  
-    mainwindow.h
+        mainwindow.h
 
 unix {
     target.path = /usr/lib
     INSTALLS += target
 }
 
+INCLUDEPATH += $$PWD/../MedianFilterPlugin
+LIBS += -L$$OUT_PWD/../MedianFilterPlugin/ -lMedianFilterPlugin
+
 FORMS += \
-    mainwindow.ui \
     mainwindow.ui
+
+

@@ -2,14 +2,14 @@
 #define MEDIANFILTERPLUGIN_H
 
 #include "medianfilterplugin_global.h"
-#include "opencvplugininterface.h"
+#include "opencv2/opencv.hpp"
+
+#include <QObject>
 
 class MEDIANFILTERPLUGINSHARED_EXPORT MedianFilterPlugin :
-    public QObject, public OpenCVPluginInterface
+    public QObject
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "com.mostefa.opencvplugininterface")
-    Q_INTERFACES(OpenCVPluginInterface)
 public:
     MedianFilterPlugin();
     ~MedianFilterPlugin();
